@@ -17,18 +17,19 @@ function App() {
 
   return (
     <>
+   <h1> Visiting Card Generator</h1>
       <div className="vc-input">
         <p>
           <input
             type="text"
-            onChange={(e) => setUserData({ ...userData, name: e.target.value })}
+            onChange={(e) => setUserData({ ...userData, name: e.target.value,submit:false })}
           />
           <label>Name</label>
         </p>
         <p>
           <input
             type="text"
-            onChange={(e) => setUserData({ ...userData, age: e.target.value })}
+            onChange={(e) => setUserData({ ...userData, age: e.target.value ,submit:false })}
           />
           <label>Age</label>
         </p>
@@ -36,7 +37,7 @@ function App() {
           <input
             type="tel"
             onChange={(e) =>
-              setUserData({ ...userData, phone: e.target.value })
+              setUserData({ ...userData, phone: e.target.value ,submit:false })
             }
           />
           <label>Phone</label>
@@ -51,7 +52,7 @@ function App() {
           <label>Website</label>
         </p>
         <button onClick={() => setUserData({ ...userData, submit: true })}>
-          Submit
+          Generate
         </button>
       </div>
 

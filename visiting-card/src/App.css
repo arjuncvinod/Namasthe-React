@@ -8,6 +8,12 @@ body{
   background-color: #fafafa;
   font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: rgb(83, 68, 251);
+  text-align: center;
+}
 .vc-input{
   /* height: 300px;  */
   width: 250px;
