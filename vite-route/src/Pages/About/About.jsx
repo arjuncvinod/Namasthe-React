@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../About/About.module.css";
+import { Link } from "react-router-dom";
 
 function About() {
  
@@ -26,6 +27,10 @@ const handlechange=(e)=>{
   };
   
   return (
+    <>
+    <header>
+    <Link to="/">Home</Link>
+   </header>
     <main className={styles.main}>
       <h1>About</h1>
       <p>
@@ -79,6 +84,7 @@ const handlechange=(e)=>{
        
       </div>
     </main>
+    </>
   );
 
 }
