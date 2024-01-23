@@ -61,3 +61,26 @@
 .contactForm button:hover{
     background-color: #05b7d6;
 }
+
+
+.copyright{
+    margin-top: 100px;
+    color: rgba(255, 255, 255, 0.586);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  
+  
+  }
+  .copyright a{
+    color: #00d8ff;
+    text-decoration: none;
+  }
+  .copyright a:hover{
+    text-decoration: underline;
+  }
+  .copyright p{
+    margin-bottom: 5px;
+  }

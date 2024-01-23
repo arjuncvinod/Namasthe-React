@@ -24,6 +24,13 @@ const ContactPage = () => {
         <button type="submit">Send</button>
       </form>
     </div>
+
+    <footer>
+    <div className={style.copyright}>
+            <p>Copyright &copy; 2024</p>
+            <p>Designed and Built by <a href="https://arjuncvinod.me">Arjun C Vinod</a></p>
+        </div>
+    </footer>
     </>
   );
 };
