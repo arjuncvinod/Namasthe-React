@@ -5,7 +5,6 @@ import styles from "../About/About.module.css";
 function About() {
  
   const [mail, setMail] = useState(" ");
-  // const [error,setError]=useState(true)
   // const [display,setDisplay]=useState(false)
   const [condition,setCondition]=useState({
     error:true,
@@ -22,6 +21,7 @@ const handlechange=(e)=>{
    isValidEmail(mail)?setCondition({error:false,display:false}):setCondition({error:true,display:true})
 }
   const  proceedToContact = () => {
+    
      !condition.error && navigate("/contact")
   };
   
