@@ -1,7 +1,11 @@
 import style from "../Contact/contact.module.css"
-
+import { Link } from "react-router-dom";
 const ContactPage = () => {
   return (
+   <>
+   <header>
+    <Link to="/">Home</Link>
+   </header>
     <div className={style.contactContainer}>
       <h2>Contact Us</h2>
       <form className={style.contactForm}>
@@ -20,6 +24,7 @@ const ContactPage = () => {
         <button type="submit">Send</button>
       </form>
     </div>
+    </>
   );
 };
 
